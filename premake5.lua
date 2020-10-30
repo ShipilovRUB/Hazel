@@ -10,7 +10,7 @@ workspace "Hazel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
---Include directories relative to root folder (solution directory)
+-- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 
@@ -40,8 +40,8 @@ project "Hazel"
 		"%{IncludeDir.GLFW}"
 	}
 
-	links
-	{
+	links 
+	{ 
 		"GLFW",
 		"opengl32.lib"
 	}
